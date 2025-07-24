@@ -1,0 +1,49 @@
+//array
+let number=[1,2,"three",true];
+let names=new Array("Mithra","Reii");
+console.log(number[2]);
+//filter()-it filtered the request arguments
+
+let number[1,2,3,4,5];
+number.splice(1,3);
+console.log(number)
+
+
+// Object with nested object and a method
+let details = {
+    name: "reii",
+    totalmark: "90",
+    // Nested object
+    subject: {
+        dbms: 98,
+        java: 99
+    },
+    avg: function() {
+        let sum = this.subject.dbms + this.subject.java;
+        return sum / 2;
+    }
+};
+
+console.log(details.totalmark);          
+console.log(details["name"]);            
+console.log(details.subject.dbms);       
+console.log(details.subject["java"]);    
+console.log(details.avg());             
+
+
+const person ={
+    name:"mithra",
+    age:"19",
+    city:"coimbatore"
+};
+//destructuring
+const{name,age,city} = person;
+
+console.log(name);
+console.log(age);
+console.log(city);
+
+// Array destructuring
+const person = ["Reii", "20", "Ace"];
+const [name, age, designation] = person;
+console.log(name + " " + age + " " + designation); 
